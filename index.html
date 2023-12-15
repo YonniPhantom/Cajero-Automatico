@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Welcome to YoniBank</h1>
+    <h3 id="subtitle">Select an Account</h3>
+    <div class="accounts" id="accounts">
+        <div class="account" onclick="selectionFirstAccount()" id="account1">
+            <div class="home">
+                <img src="./Resources/profile.jpg" alt="">
+                <h4>Itzel</h4>
+            </div>
+            <div class="second" id="second1">
+                <label>Password:</label>
+                <h5 class="error"></h5>
+                <input type="password" id="password1">
+                <button class="btn" onclick="login('Itzel', document.getElementById('password1').value)">Ingresar</button>
+            </div>
+        </div>
+        <div class="account" onclick="selectionSecondAccount()" id="account2">
+            <div class="home">
+                <img src="./Resources/profile.jpg" alt="">
+                <h4>Yoni</h4>
+            </div>
+            <div class="second" id="second2">
+                <label>Password:</label>
+                <h5 class="error"></h5>
+                <input type="password" id="password2">
+                <button class="btn" onclick="login('Yoni', document.getElementById('password2').value)">Ingresar</button>
+            </div>
+        </div>
+        <div class="account" onclick="selectionTirthAccount()" id="account3">
+            <div class="home">
+                <img src="./Resources/profile.jpg" alt="">
+                <h4>Jett</h4>
+            </div>
+            <div class="second" id="second3">
+                <label>Password:</label>
+                <h5 class="error"></h5>
+                <input type="password" id="password3">
+                <button class="btn" onclick="login('Jett', document.getElementById('password3').value)">Ingresar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="inicio" id="inicio">
+        <div class="buttons">
+            <div class="button" onclick="consulta()">
+                <img src="./Resources/consulta.png" alt="">
+                <h3>Consultar Saldo</h3>
+            </div>
+            <div class="button" onclick="depositar()">
+                <img src="./Resources/depositar.png" alt="">
+                <h3>Depositar</h3>
+            </div>
+            <div class="button" onclick="retirar()">
+                <img src="./Resources/retirar.png" alt="">
+                <h3>Retirar</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/animaciones.js"></script>
+    <script src="./scripts/bank.js"></script>
+</body>
+</html>
